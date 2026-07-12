@@ -95,8 +95,6 @@ a {
 
 
 /* Headers */
-/* .header {
-} */
 .header h1 {
 	margin-top: 100px;
 	font-size: 70px;
@@ -235,7 +233,6 @@ footer img:hover {
 
 
 
-
 /* Resume */
 .inPagePDF
 {
@@ -253,12 +250,21 @@ footer img:hover {
 }
 /* end resume */
 
+/* Custom css for phone screens */
 @media only screen and ((max-width: 1100px)) {
 
-	.main {
+	.topBar a {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/* make games display as a vertical list */
+	.games {
 		display: block;
 	}
-}
-@media only screen and ((max-width: 1300px)  or (max-height: 700px)) {
-
+	/* make games fill up more of the screen and have a gap between each one */
+	.gameItem {
+		width: 100%;
+		margin-bottom: 100px;
+	}
 }
