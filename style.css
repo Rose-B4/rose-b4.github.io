@@ -8,6 +8,7 @@ body {
 	margin: 0;
 	color: white;
 	font-family: monospace;
+	font-size: var(--defaultTextSize);
 	background: var(--roseTM);
 	background: var(--gradient);
 	background-attachment: fixed;
@@ -21,7 +22,6 @@ a {
 
 
 .aText, .aTextSpecial {
-	font-size: var(--importantText);
 	color: white;
 	text-decoration: none;
 }
@@ -39,7 +39,7 @@ a {
 
 /* Website Top Bar */
 .topBar {
-	font-size: 200%;
+	font-size: 25px;
 	position: sticky;
 	z-index: 100;
 	top: 0;
@@ -90,16 +90,16 @@ a {
 }
 .nameCard h2 {
 	margin-top: -80px;
-	font-size: var(--importantText);
 	font-weight: 1;
 }
 .nameCard h3 {
+	text-align: center;
+	word-break: keep-all;
 	margin-top: -20px;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: var(--importantText);
 	font-weight: 1;
-	width: 500px;
+	width: 700px;
 }
 /* end name card */
 
@@ -216,24 +216,17 @@ footer {
 	background-color: var(--itemBackground);
 	
 }
-.footer a {
-	font-size: var(--importantText);
-}
-.footerLink img {
-	text-decoration: none;
+.footerLinks img {
 	transition: scale 0.1s;
-}
-.footerLink img:hover { 
-	scale: 1.1;
-}
-.footerHighlighted {
-	color: var(--colorLinkSelected);
-	text-decoration: none;
-}
-.footer img {
 	margin-top: 20px;
 	width:100px;
 	filter: brightness(0) saturate(100%) invert(100%) sepia(12%) saturate(5558%) hue-rotate(306deg) brightness(123%) contrast(112%);
+}
+.footerLinks img:hover { 
+	scale: 1.1;
+}
+.footerLinks a {
+	text-decoration: none;
 }
 /* end footer */
 
@@ -264,7 +257,7 @@ footer {
 	/* adjust height and padding of top bar */
 	.topBar {
 		padding: 50px;
-		font-size: 300%;
+		font-size: 30px;
 	}
 	.topBar a {
 		padding-left: 10px;
@@ -293,12 +286,6 @@ footer {
 	.gameItem {
 		width: 100%;
 		margin-bottom: 200px;
-	}
-	.gameItem p {
-		font-size: var(--importantText);
-	}
-	.cardTag {
-		font-size: var(--importantText);
 	}
 	/* end games */
 
