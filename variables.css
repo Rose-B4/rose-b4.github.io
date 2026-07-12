@@ -1,0 +1,19 @@
+:root {
+/* Colors */
+	--rose-tm: #a33ffb;
+	--item-background: #1b0033;
+	--item-background-hovered: #20093B;
+	/* --color-accent: #C88AFF; */
+	--color-accent: #cd8de8;
+	--gradient-blue: rgba(8, 95, 161, 1);
+	--color-link-selected: #5ce2ed;
+
+	--gradient0: linear-gradient(160deg, var(--rose-tm) 42%, var(--gradient-blue) 100%);
+	--gradient1: linear-gradient(180deg, var(--rose-tm) 10%, var(--color-accent) 100%);
+/* end colors */
+
+
+/* Sizes */
+	--importantText: 40px;
+/* end sizes */
+}

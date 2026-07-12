@@ -1,0 +1,264 @@
+
+/* General */
+html {
+  	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	color: white;
+	font-family: monospace;
+	background: var(--rose-tm);
+	background: var(--gradient1);
+	background-attachment: fixed;
+}
+
+a {
+	color: var(--color-link-selected);
+	text-decoration: underline;
+}
+/* end general */
+
+
+
+/* Website Top Bar */
+.topBar {
+	font-size: 200%;
+	position: sticky;
+	z-index: 100;
+	top: 0;
+	overflow: hidden;
+	background-color: var(--item-background);
+	padding: 20px;
+	/* opacity: 1.0; */
+	text-align: center;
+}
+.topBar a{
+	color: var(--color-link-selected);
+	padding-right: 60px;
+	padding-left: 60px;
+	transition: scale 0.1s;
+	display: inline-block;
+}
+.topBar a:hover {
+	scale: 1.4;
+}
+.topBar img {
+	image-rendering: pixelated;
+	width: 25px;
+	/* make it blue */
+	filter: brightness(0) saturate(100%) invert(83%) sepia(85%) saturate(6379%) hue-rotate(146deg) brightness(97%) contrast(90%);
+}
+/* end top bar */
+
+
+
+/* Main class (holds all content not in the top bar or footer) */
+.main {
+	width: 90%;
+	margin: auto;
+}
+/* end main class */
+
+
+
+/* Name card */
+.nameCard {
+	padding: 10px;
+	padding-top: 0;
+	text-align: center;
+}
+.nameCard h1 {
+	font-size: 120px;
+	font-weight: 1;
+	margin-bottom: -30px;
+}
+.nameCard h2 {
+	margin-top: -80px;
+	font-size: var(--importantText);
+	font-weight: 1;
+}
+.nameCard h3 {
+	margin-top: -20px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: var(--importantText);
+	font-weight: 1;
+	transition: scale 0.1s;
+	width: 500px;
+}
+.nameCard h3:hover {
+	scale: 1.12
+}
+/* end name card */
+
+
+
+/* Headers */
+/* .header {
+} */
+.header h1 {
+	margin-top: 100px;
+	font-size: 70px;
+	text-align: center;
+	font-weight: 1;
+}
+.header img {
+	width: 100%;
+	border-radius: 10px;
+}
+/* end headers */
+
+
+
+/* Games */
+.games {
+	margin-top: 0;
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.gameItem {
+	margin: auto;
+	margin-top: 0;
+	width: 23%;
+	transition: scale 0.1s;
+}
+.gameItem:hover {
+	scale:1.05
+}
+.gameItem img {
+	width: 100%;
+	border-radius: 10px;
+}
+.gameItem h1 {
+	font-weight: 1;
+	text-align: center;
+	color: aliceblue;
+	font-size: 45px;
+}
+.gameItem p {
+	font-size: 25px;
+}
+/* end games */
+
+
+
+/* Tags */
+.cardTagsHolder {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin: 10px 0px;
+}
+
+.cardTag {
+	border: 2px solid;
+	border-radius: 5px;
+	font-size: 20px;
+	color: white;
+	font-weight: 1;
+	text-align: center;
+	padding: 2px 7px;
+	background-color: var(--item-background);
+}
+.cardTag[type="project-type"] {	color: #6ecfff; }
+.cardTag[type="date"] {	color: #f93a9a; }
+.cardTag[type="role"] { color: #ffd15b; }
+.cardTag[type="tool"] {	color: #41e277; }
+/* end tags */
+
+
+/* About me */
+.aboutMe {
+	display: flex;
+	/* margin: auto; */
+	/* background-color: wheat; */
+}
+.aboutMe img, p {
+	transition: border-color 0.15s;
+}
+.aboutMe img {
+	height: 500px;
+	width: fit-content;
+	margin-right: 100px;
+	margin-left: 0;
+	border: 5px solid var(--gradient-blue);
+	border-radius: 10px;
+}
+.aboutMe p {
+	white-space: normal;
+	font-size: var(--importantText);
+	background-color: var(--item-background);
+	background-size: 100%;
+	margin-right: 0px;
+	margin-left: 0px;
+	border: 5px solid var(--gradient-blue);
+	border-radius: 10px;
+	padding: 20px;
+	top: 0;
+}
+.aboutMe img:hover, p:hover {
+	border-color: var(--color-link-selected)
+}
+/* end about me */
+
+
+
+/* Footer */
+footer {
+	text-align: center;
+	margin: 0;
+	margin-top: 80px;
+	padding-top: 50px;
+	background-color: var(--item-background);
+	
+}
+footer a, p {
+	color: white;
+	text-decoration: none;
+	font-size: var(--importantText);
+}
+footer img {
+	margin-top: 20px;
+	width:100px;
+	filter: brightness(0) saturate(100%) invert(100%) sepia(12%) saturate(5558%) hue-rotate(306deg) brightness(123%) contrast(112%);
+	transition: scale 0.1s;
+}
+footer img:hover {
+	scale: 1.2;
+}
+
+/* end footer */
+
+
+
+
+/* Resume */
+.inPagePDF
+{
+	margin-top: 80px;
+	text-align: center;
+}
+.inPagePDF iframe {
+	width: 70vw;
+    height: 80vw;
+    max-width: 1000px;
+    max-height: 1200px;
+
+	border: none;
+	
+}
+/* end resume */
+
+@media only screen and ((max-width: 1100px)) {
+
+	.main {
+		display: block;
+	}
+}
+@media only screen and ((max-width: 1300px)  or (max-height: 700px)) {
+
+}
