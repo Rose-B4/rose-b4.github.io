@@ -178,7 +178,7 @@ a {
 .aboutMe img, .aboutMe p {
 	margin-top: 0;
 	transition: border-color 0.15s;
-	border: 5px solid var(--gradient-blue);
+	border: 5px solid var(--accentBlue);
 	border-radius: 10px;
 }
 .aboutMe img {
@@ -304,7 +304,7 @@ footer img:hover {
 		height: auto;
 	}
 	.aboutMe p {
-		width: 50%;
+		width: 95%;
 		text-align: left;
 }
 
