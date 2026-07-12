@@ -296,6 +296,9 @@ footer img:hover {
 		display: block;
 		text-align: center;
 	}
+	.aboutMe img, .aboutMe p {
+		border-width: 10px;
+	}
 	.aboutMe img {
 		margin-right: 0px;
 		margin-left: 0px;
