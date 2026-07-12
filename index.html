@@ -46,7 +46,9 @@
 			<div class="nameCard">
 				<h1>Rose Briggs<h1>
 				<h2>(she/her)</h2>
-				<h3><a href="mailto:rosebriggs@proton.me" target="_blank" rel="noopener noreferrer nofollow">rosebriggs@proton.me</a></h3>
+				<h3 class="imageLink">
+					<a href="mailto:rosebriggs@proton.me" target="_blank" rel="noopener noreferrer nofollow">rosebriggs@proton.me</a>
+				</h3>
 			</div>
 			<!-- end name card -->
 			
@@ -61,7 +63,7 @@
 			<div class="games">
 
 				<!-- Drop Off Dragon -->
-				<div class="gameItem">
+				<div class="gameItem imageLink">
 					<a href="" target="_blank">
 						<!-- <h1>Drop Off Dragon</h1> -->
 						<img src="./images/projects/dropOffDragon.jpg" />
@@ -83,7 +85,7 @@
 
 
 				<!-- Beatdown Breakdown -->
-				<div class="gameItem">
+				<div class="gameItem imageLink">
 					<a href="https://rosequartz-4.itch.io/beatdown-breakdown" target="_blank" style="image-rendering: pixelated">
 						<!-- <h1>Beatdown Breakdown</h1> -->
 						<img src="./images/projects/beatdown-breakdown.png" />
@@ -105,7 +107,7 @@
 
 
 				<!-- Rites of Purrgatory -->
-				<div class="gameItem">
+				<div class="gameItem imageLink">
 					<a href="https://manny-mallea.itch.io/rites-of-purrgatory" target="_blank">
 						<!-- <h1>Rites of Purrgatory</h1> -->
 						<img src="./images/projects/purrgatory_small.png" />
@@ -128,7 +130,7 @@
 				
 				
 				<!-- Prom Pop Panic -->
-				<div class="gameItem">
+				<div class="gameItem imageLink">
 					<a href="https://lan-thorn.itch.io/duchess-grizabella-nightfire-99-in-prom-panic-at-bubblegum-island" target="_blank">
 						<!-- <h1>Prom Pop Panic</h1> -->
 						<img src="./images/projects/Y2K-Girlypop.png" />
@@ -158,11 +160,13 @@
 
 			<div class="aboutMe">
 				<img src="./images/aboutMe.jpg"/>
-				<p>Hi, my name is Rose Briggs!<br><br>
-					I am a game developer from western Massachusetts currently studying interactive media and game development at WPI.
-					My main interest in game development is 2D platformers, but I enjoy making just about any kind of game!
-					The majority of my experience in game development is in programming, but I also have a little experience in 3D art (modeling, rigging, and animation), foley sound effects, and music.
-				</p>
+				<div class="aboutMeText">
+					<a class="aText">Hi, my name is Rose Briggs!<br><br>
+						I am a game developer from western Massachusetts currently studying interactive media and game development at WPI.
+						My main interest in game development is 2D platformers, but I enjoy making just about any kind of game!
+						The majority of my experience in game development is in programming, but I also have a little experience in 3D art (modeling, rigging, and animation), foley sound effects, and music.
+					</a>
+				</div>
 			</div>
 			<!-- end about me -->
 		</div>
@@ -170,23 +174,25 @@
 	</body>
 	
 	<footer>
-		<div>
-			<p>
-				<a>This website was made by </a>
-				<a style="color: var(--colorLinkSelected);">me </a>
-				<a>using HTML and CSS! </a>
-			</p>
-			<p>
-				Links:
-			</p>
-			<a href="https://rosequartz-4.itch.io" target="_blank">
-				itch.io<img src="/images/icons/itchio-logo-textless-black.svg">
-			</a>
-			<br>
+		<div class="footer">
+			<a class="aText">This website was made almost entirely by </a>
+			<a class="aTextSpecial">me </a>
+			<a class="aText">using HTML and CSS!</a>
+			<br><br><br>
+		
+				
+			<a class="aText">If you are looking for more information about me, feel free to check out </a>
+			<a href="/resume/">my resume</a>
+			<br><br>
 
-			<a href="mailto:rosebriggs@proton.me" target="_blank" rel="noopener noreferrer nofollow">
-				email<img src="/images/icons/pixel--envelope-solid.svg">
+
+			<a class="footerLink" href="https://rosequartz-4.itch.io" target="_blank">
+				<img src="/images/icons/itchio-logo-textless-black.svg">
 			</a>
+			<a class="footerLink" href="mailto:rosebriggs@proton.me" target="_blank" rel="noopener noreferrer nofollow">
+				<img src="/images/icons/pixel--envelope-solid.svg">
+			</a>
+
 			<br>
 			<br>
 			<br>
