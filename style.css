@@ -265,6 +265,9 @@ footer img:hover {
 	.topBar img {
 		width: 30px;
 	}
+	/* end top bar */
+
+
 
 	/* make games display as a vertical list */
 	.games {
@@ -274,5 +277,14 @@ footer img:hover {
 	.gameItem {
 		width: 100%;
 		margin-bottom: 100px;
+	}
+	.gameItem p {
+		font-size: 40px;
+	}
+	/* end games */
+
+
+	.cardTag {
+		font-size: 40px;
 	}
 }
