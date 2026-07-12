@@ -8,13 +8,13 @@ body {
 	margin: 0;
 	color: white;
 	font-family: monospace;
-	background: var(--rose-tm);
-	background: var(--gradient1);
+	background: var(--roseTM);
+	background: var(--gradient);
 	background-attachment: fixed;
 }
 
 a {
-	color: var(--color-link-selected);
+	color: var(--colorLinkSelected);
 	text-decoration: underline;
 }
 /* end general */
@@ -28,13 +28,13 @@ a {
 	z-index: 100;
 	top: 0;
 	overflow: hidden;
-	background-color: var(--item-background);
+	background-color: var(--itemBackground);
 	padding: 20px;
 	/* opacity: 1.0; */
 	text-align: center;
 }
 .topBar a{
-	color: var(--color-link-selected);
+	color: var(--colorLinkSelected);
 	padding-right: 60px;
 	padding-left: 60px;
 	transition: scale 0.1s;
@@ -160,7 +160,7 @@ a {
 	font-weight: 1;
 	text-align: center;
 	padding: 2px 7px;
-	background-color: var(--item-background);
+	background-color: var(--itemBackground);
 }
 .cardTag[type="project-type"] {	color: #6ecfff; }
 .cardTag[type="date"] {	color: #f93a9a; }
@@ -188,14 +188,14 @@ a {
 	margin-left: 0;
 }
 .aboutMe p {
+	min-height: 460px;
 	white-space: normal;
 	font-size: var(--importantText);
-	background-color: var(--item-background);
-	background-size: 100%;
+	background-color: var(--itemBackground);
 	padding: 20px;
 }
 .aboutMe img:hover, .aboutMe p:hover {
-	border-color: var(--color-link-selected)
+	border-color: var(--colorLinkSelected)
 }
 /* end about me */
 
@@ -207,7 +207,7 @@ footer {
 	margin: 0;
 	margin-top: 80px;
 	padding-top: 50px;
-	background-color: var(--item-background);
+	background-color: var(--itemBackground);
 	
 }
 footer a, footer p {
@@ -291,6 +291,22 @@ footer img:hover {
 		font-size: 40px;
 	}
 	/* end games */
+
+	.aboutMe {
+		display: block;
+		text-align: center;
+	}
+	.aboutMe img {
+		margin-right: 0px;
+		margin-left: 0px;
+		margin-bottom: 50px;
+		width: 50%;
+		height: auto;
+	}
+	.aboutMe p {
+		width: 50%;
+		text-align: left;
+}
 
 	/* make resume wider and taller to fit mobile screen */
 	.inPagePDF iframe {
