@@ -251,7 +251,7 @@ footer img:hover {
 /* end resume */
 
 /* Custom css for phone screens */
-@media only screen and ((max-width: 1100px)) {
+@media only screen and ((max-width: 1150px)) {
 
 	/* adjust height and padding of top bar */
 	.topBar {
@@ -269,6 +269,14 @@ footer img:hover {
 
 
 
+	/* make the rainbow lines thicker */
+	.header img {
+		height: 15px;
+	}
+	/* end rainbow lines */
+
+
+
 	/* make games display as a vertical list */
 	.games {
 		display: block;
@@ -276,15 +284,21 @@ footer img:hover {
 	/* make games fill up more of the screen and have a gap between each one */
 	.gameItem {
 		width: 100%;
-		margin-bottom: 100px;
+		margin-bottom: 200px;
 	}
 	.gameItem p {
 		font-size: 40px;
 	}
-	/* end games */
-
-
 	.cardTag {
 		font-size: 40px;
+	}
+	/* end games */
+
+	.inPagePDF iframe {
+		width: 100%;
+		height: 100vw;
+		max-width: none;
+		max-height: none;
+
 	}
 }
