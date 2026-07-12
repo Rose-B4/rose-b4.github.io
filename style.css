@@ -253,9 +253,17 @@ footer img:hover {
 /* Custom css for phone screens */
 @media only screen and ((max-width: 1100px)) {
 
+	/* adjust height and padding of top bar */
+	.topBar {
+		padding: 50px;
+		font-size: 300%;
+	}
 	.topBar a {
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.topBar img {
+		width: 30px;
 	}
 
 	/* make games display as a vertical list */
