@@ -175,30 +175,26 @@ a {
 	/* margin: auto; */
 	/* background-color: wheat; */
 }
-.aboutMe img, p {
+.aboutMe img, .aboutMe p {
+	margin-top: 0;
 	transition: border-color 0.15s;
+	border: 5px solid var(--gradient-blue);
+	border-radius: 10px;
 }
 .aboutMe img {
 	height: 500px;
 	width: fit-content;
 	margin-right: 100px;
 	margin-left: 0;
-	border: 5px solid var(--gradient-blue);
-	border-radius: 10px;
 }
 .aboutMe p {
 	white-space: normal;
 	font-size: var(--importantText);
 	background-color: var(--item-background);
 	background-size: 100%;
-	margin-right: 0px;
-	margin-left: 0px;
-	border: 5px solid var(--gradient-blue);
-	border-radius: 10px;
 	padding: 20px;
-	top: 0;
 }
-.aboutMe img:hover, p:hover {
+.aboutMe img:hover, .aboutMe p:hover {
 	border-color: var(--color-link-selected)
 }
 /* end about me */
@@ -214,7 +210,7 @@ footer {
 	background-color: var(--item-background);
 	
 }
-footer a, p {
+footer a, footer p {
 	color: white;
 	text-decoration: none;
 	font-size: var(--importantText);
@@ -250,8 +246,10 @@ footer img:hover {
 }
 /* end resume */
 
+
+
 /* Custom css for phone screens */
-@media only screen and ((max-width: 1150px)) {
+@media only screen and ((max-width: 1270px)) {
 
 	/* adjust height and padding of top bar */
 	.topBar {
@@ -294,6 +292,7 @@ footer img:hover {
 	}
 	/* end games */
 
+	/* make resume wider and taller to fit mobile screen */
 	.inPagePDF iframe {
 		width: 100%;
 		height: 100vw;
@@ -301,4 +300,6 @@ footer img:hover {
 		max-height: none;
 
 	}
+	/* end resume */
 }
+/* end phone css */
