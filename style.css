@@ -1,4 +1,18 @@
 
+/* Variables */
+:root {
+	/* Colors */
+	--roseTM: #a33ffb;
+	--itemBackground: #1b0033;
+	--colorLinkSelected: #5ce2ed;
+	--accentBlue: #085fa1;
+
+	--gradient: linear-gradient(180deg, var(--roseTM) 10%, #cd8de8 100%);
+	/* end colors */
+}
+/* end variables */
+
+
 /* General */
 html {
   	scroll-behavior: smooth;
@@ -8,7 +22,7 @@ body {
 	margin: 0;
 	color: white;
 	font-family: monospace;
-	font-size: var(--defaultTextSize);
+	font-size: 40px;
 	background: var(--roseTM);
 	background: var(--gradient);
 	background-attachment: fixed;
