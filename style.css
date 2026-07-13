@@ -259,7 +259,7 @@ footer {
 .footerLinks img {
 	transition: scale 0.1s;
 	margin-top: 20px;
-	width:100px;
+	width:120px;
 	filter: brightness(0) saturate(100%) invert(83%) sepia(85%) saturate(6379%) hue-rotate(146deg) brightness(97%) contrast(90%);
 }
 .footerLinks img:hover { 
@@ -326,6 +326,12 @@ footer {
 	.gameItem {
 		width: 100%;
 		margin-bottom: 200px;
+	}
+	.gameItem p {
+		font-size: 40px;
+	}
+	.cardTag {
+		font-size: 40px;
 	}
 	/* end games */
 
