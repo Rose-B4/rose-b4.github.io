@@ -1,19 +1,18 @@
 
-/* Variables */
+/*#region Variables */
 :root {
-	/* Colors */
 	--roseTM: #a33ffb;
 	--itemBackground: #1b0033;
 	--colorLinkSelected: #5ce2ed;
 	--accentBlue: #085fa1;
 
 	--gradient: linear-gradient(180deg, var(--roseTM) 40%, #d96cec 100%);
-	/* end colors */
 }
-/* end variables */
+/*#endregion variables */
 
 
-/* General */
+
+/*#region General */
 html {
   	scroll-behavior: smooth;
 }
@@ -46,10 +45,11 @@ a {
 .imageLink:hover {
 	scale: 1.1;
 }
-/* end general */
+/*#endregion general */
 
 
-/* Website Top Bar */
+
+/*#region Top Bar */
 .topBar {
 	font-size: 25px;
 	position: sticky;
@@ -77,20 +77,21 @@ a {
 	/* make it blue */
 	filter: brightness(0) saturate(100%) invert(83%) sepia(85%) saturate(6379%) hue-rotate(146deg) brightness(97%) contrast(90%);
 }
-/* end top bar */
+/*#endregion top bar */
 
 
 
-/* Main class (holds all content not in the top bar or footer) */
+/*#region Main (holds all content not in the top bar or footer) */
 .main {
 	width: 90%;
 	margin: auto;
+	justify-content: center;
 }
-/* end main class */
+/*#endregion main class */
 
 
 
-/* Name card */
+/*#region Name card */
 .nameCard {
 	padding: 10px;
 	padding-top: 0;
@@ -114,11 +115,11 @@ a {
 	font-weight: 1;
 	width: 700px;
 }
-/* end name card */
+/*#endregion name card */
 
 
 
-/* Headers */
+/*#region Headers */
 .header img {
 	width: 100%;
 	border-radius: 10px;
@@ -129,18 +130,21 @@ a {
 	text-align: center;
 	font-weight: 1;
 }
-/* end headers */
+/*#endregion headers */
 
 
 
-/* Games */
+/*#region Games */
 .games {
 	margin-top: 0;
 	display: flex;
+	justify-content: center;
 	margin-bottom: 100px;
 }
 
 .gameItem {
+	padding: 0.5%;
+	background-color: #085fa1;
 	margin: auto;
 	margin-top: 0;
 	width: 23%;
@@ -152,17 +156,16 @@ a {
 .gameItem h1 {
 	font-weight: 1;
 	text-align: center;
-	color: aliceblue;
 	font-size: 45px;
 }
 .gameItem p {
 	font-size: 25px;
 }
-/* end games */
+/*#endregion games */
 
 
 
-/* Tags */
+/*#region Tags */
 .cardTagsHolder {
   width: 100%;
   display: flex;
@@ -186,10 +189,11 @@ a {
 .cardTag[type="date"] {	color: #f93a9a; }
 .cardTag[type="role"] { color: #ffd15b; }
 .cardTag[type="tool"] {	color: #41e277; }
-/* end tags */
+/*#endregion tags */
 
 
-/* About me */
+
+/*#region About me */
 .aboutMe {
 	display: flex;
 	margin-bottom: 100px;
@@ -217,11 +221,11 @@ a {
 .aboutMe img:hover, .aboutMeText:hover, .toolItem:hover {
 	border-color: var(--colorLinkSelected)
 }
-/* end about me */
+/*#endregion about me */
 
 
 
-/* Tools */
+/*#region Tools */
 .tools {
 	display: flex;
 	justify-content: center;
@@ -245,11 +249,11 @@ a {
 	margin-bottom: 0;
 	margin-top: 0;
 }
-/* end tools */
+/*#endregion Tools*/
 
 
 
-/* Footer */
+/*#region Footer */
 footer {
 	text-align: center;
 	margin: 0;
@@ -269,11 +273,11 @@ footer {
 .footerLinks a {
 	text-decoration: none;
 }
-/* end footer */
+/*#endregion footer */
 
 
 
-/* Resume */
+/*#region Resume */
 .inPagePDF
 {
 	margin-top: 80px;
@@ -288,14 +292,14 @@ footer {
 	border: none;
 	
 }
-/* end resume */
+/*#endregion resume */
 
 
 
-/* Custom css for phone screens */
+/*#region Custom css for phone screens */
 @media only screen and (max-width: 1270px) {
 
-	/* adjust height and padding of top bar */
+	/*#region top bar */
 	.topBar {
 		padding: 50px;
 		font-size: 40px;
@@ -307,23 +311,22 @@ footer {
 	.topBar img {
 		width: 30px;
 	}
-	/* end top bar */
+	/*#endregion top bar */
 
 
 
-	/* make the rainbow lines thicker */
+	/*#region rainbow lines */
 	.header img {
 		height: 15px;
 	}
-	/* end rainbow lines */
+	/*#endregion rainbow lines */
 
 
 
-	/* make games display as a vertical list */
+	/*#region Games */
 	.games {
 		display: block;
 	}
-	/* make games fill up more of the screen and have a gap between each one */
 	.gameItem {
 		width: 100%;
 		margin-bottom: 200px;
@@ -334,8 +337,9 @@ footer {
 	.cardTag {
 		font-size: 40px;
 	}
-	/* end games */
+	/*#endregion games */
 
+	/*#region About me  */
 	.aboutMe {
 		display: block;
 		text-align: center;
@@ -354,8 +358,9 @@ footer {
 		width: 95%;
 		text-align: left;
 	}
+	/*#endregion about me */
 
-	/* make resume wider and taller to fit mobile screen */
+	/*#region Resume */
 	.inPagePDF iframe {
 		width: 100%;
 		height: 100vw;
@@ -363,6 +368,6 @@ footer {
 		max-height: none;
 
 	}
-	/* end resume */
+	/*#endregion resume */
 }
-/* end phone css */
+/*#endregion phone css */
