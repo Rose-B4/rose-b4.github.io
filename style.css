@@ -84,6 +84,7 @@ a {
 /*#region Main (holds all content not in the top bar or footer) */
 .main {
 	width: 90%;
+	max-width: 3000px;
 	margin: auto;
 	justify-content: center;
 }
@@ -139,13 +140,37 @@ a {
 	margin-top: 0;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 100px;
+	flex-wrap: wrap;
+	text-align: center;
 }
 
 .gameItem {
-	margin: auto;
+	background-color: var(--itemBackground);
+	border: 5px solid;
+	border-color: var(--accentBlue);
+	padding: 10px;
+	border-radius: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
 	margin-top: 0;
-	width: 23%;
+	min-width: 400px;
+	max-width: 700px;
+	width: 22%;
+	margin-bottom: 100px;
+}
+.gameItem:hover {
+	scale: 1.05;
+}
+.gameItem h1 {
+	font-weight: 1;
+	/* color: white; */
+	font-size: 40px;
+	text-align: left;
+	background-color: var(--itemBackgroundLight);
+	border-radius: 10px;
+	top: 0;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 .gameItem img {
 	width: 100%;
@@ -153,24 +178,28 @@ a {
 }
 .gameItem h1 {
 	font-weight: 1;
-	text-align: center;
+	text-align: left;
 	font-size: 45px;
 }
 .gameItem p {
 	font-size: 25px;
+	text-align: left;
 }
 /*#endregion games */
 
 
 
 /*#region Tags */
+/* Credit to Bashar Alqassar for the tags CSS! */
 .cardTagsHolder {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   column-gap: 10px;
   row-gap: 10px;
   margin: 10px 0px;
+  background-color: var(--itemBackgroundLight);
+  /* padding: 10px; */
+  border-radius: 10px;
 }
 
 .cardTag {
@@ -195,6 +224,7 @@ a {
 .aboutMe {
 	display: flex;
 	margin-bottom: 100px;
+	justify-content: center;
 }
 .aboutMe img, .aboutMeText, .toolItem {
 	transition: border-color 0.15s, scale 0.1s;
@@ -216,7 +246,7 @@ a {
 	background-color: var(--itemBackground);
 	padding: 20px;
 }
-.aboutMe img:hover, .aboutMeText:hover, .toolItem:hover {
+.aboutMe img:hover, .aboutMeText:hover, .toolItem:hover, .gameItem:hover {
 	border-color: var(--colorLinkSelected)
 }
 /*#endregion about me */
@@ -324,10 +354,20 @@ footer {
 	/*#region Games */
 	.games {
 		display: block;
+		justify-content: center;
+		text-align: center;
 	}
 	.gameItem {
 		width: 100%;
 		margin-bottom: 200px;
+		max-width: none;
+		min-width: none;
+	}
+	.gameItem:hover {
+		scale: 1	;
+	}
+	.gameItem h1 {
+		font-size: 80px;
 	}
 	.gameItem p {
 		font-size: 40px;
