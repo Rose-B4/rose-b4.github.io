@@ -169,7 +169,6 @@ a {
 }
 .gameItem h1 {
 	font-weight: 1;
-	/* color: white; */
 	font-size: 40px;
 	text-align: left;
 	background-color: var(--itemBackgroundLight);
@@ -360,16 +359,20 @@ footer {
 	.games {
 		display: block;
 		justify-content: center;
+
 		text-align: center;
 	}
 	.gameItem {
-		width: 100%;
+		width: 95%;
+		margin-right: auto;
+		margin-left: auto;
 		margin-bottom: 200px;
 		max-width: none;
 		min-width: none;
 	}
 	.gameItem:hover {
-		scale: 1	;
+		/* remove ability to resize */
+		scale: 1;
 	}
 	.gameItem h1 {
 		font-size: 80px;
