@@ -190,7 +190,7 @@ a {
 
 
 /*#region Tags */
-/* Credit to Bashar Alqassar for the tags CSS! */
+/* Credit to Bashar Alqassar for the tagHolder and cardTags CSS! (with permission of course) */
 .cardTagsHolder {
   display: flex;
   flex-wrap: wrap;
@@ -198,7 +198,6 @@ a {
   row-gap: 10px;
   margin: 10px 0px;
   background-color: var(--itemBackgroundLight);
-  /* padding: 10px; */
   border-radius: 10px;
 }
 
